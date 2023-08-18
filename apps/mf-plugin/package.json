@@ -1,0 +1,23 @@
+{
+  "name": "szero-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "szero-scripts": "1.1.0"
+  },
+  "scripts": {
+    "start": "szero-scripts start env=local",
+    "build": "szero-scripts build env=prod",
+    "build:test": "szero-scripts build env=test",
+    "build:pre": "szero-scripts build env=pre",
+    "build:prod": "szero-scripts build env=prod"
+  },
+  "dependencies": {
+    "@ant-design/pro-components": "2.4.16",
+    "@szero/pc": "2.0.2",
+    "antd": "^5.8.3",
+    "mobx": "^6.10.0",
+    "mobx-react-lite": "^4.0.3",
+    "react": "18.2.0"
+  }
+}
