@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "lerna run --parallel start",
+    "build": "lerna run --parallel build",
     "prepare": "husky install",
     "prettier:check": "prettier --check ./apps",
     "prettier:write": "prettier --write ./apps"
