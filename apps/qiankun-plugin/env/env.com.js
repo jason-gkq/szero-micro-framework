@@ -4,8 +4,8 @@ module.exports.defineConfig = () => ({
   cachePrefix: 'admin_',
   route: {
     type: 'Browser', // Browser | Hash 可以调整路由方式，如果选择hash则最好去掉appName，且调整publicUrlOrPath
-    showRoutesTab: false,
-    routesHistoryLength: 1,
+    showRoutesTab: true,
+    routesHistoryLength: 50,
   },
   layout: {
     title: '管理中台',

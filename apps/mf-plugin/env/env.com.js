@@ -6,7 +6,7 @@ module.exports.defineConfig = () => ({
   route: {
     type: 'Browser', // Browser | Hash 可以调整路由方式，如果选择hash则最好去掉appName，且调整publicUrlOrPath
     showRoutesTab: false,
-    routesHistoryLength: 0,
+    routesHistoryLength: 50,
   },
   layout: {
     title: '管理中台',
