@@ -5,7 +5,13 @@
   "author": "guokeqin <guokeqin163@163.com>",
   "homepage": "https://github.com/jason-gkq/szero-micro-framework/tree/main/apps/mf-plugin#readme",
   "license": "ISC",
-  "main": "src/pages/index/index.tsx",
+  "scripts": {
+    "start": "szero-scripts start env=local",
+    "build": "szero-scripts build env=prod",
+    "build:test": "szero-scripts build env=test",
+    "build:pre": "szero-scripts build env=pre",
+    "build:prod": "szero-scripts build env=prod"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jason-gkq/szero-micro-framework.git"
@@ -13,12 +19,20 @@
   "bugs": {
     "url": "https://github.com/jason-gkq/szero-micro-framework/issues"
   },
-  "scripts": {
-    "start": "szero-scripts start env=local",
-    "build": "szero-scripts build env=prod",
-    "build:test": "szero-scripts build env=test",
-    "build:pre": "szero-scripts build env=pre",
-    "build:prod": "szero-scripts build env=prod"
+  "browserslist": {
+    "production": [
+      "> 0.5%",
+      "last 2 versions",
+      "Firefox ESR",
+      "not dead",
+      "IE 11",
+      "not IE 10"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
+    ]
   },
   "overrides": {
     "@ant-design/pro-components": "$@ant-design/pro-components",
@@ -43,6 +57,6 @@
     "react": "18.2.0"
   },
   "devDependencies": {
-    "szero-scripts": "1.1.0"
+    "szero-scripts": "1.2.0"
   }
 }

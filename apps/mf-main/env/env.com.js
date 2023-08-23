@@ -26,12 +26,12 @@ module.exports.defineConfig = () => ({
       // copyOptions
       // headScripts
     },
-    output: {
-      library: `admin`,
-      libraryTarget: 'umd',
-      globalObject: 'window',
-      // jsonpFunction: `webpackJsonp_doms`,
-    },
+    // output: {
+    //   library: `admin`,
+    //   libraryTarget: 'umd',
+    //   globalObject: 'window',
+    //   // jsonpFunction: `webpackJsonp_doms`,
+    // },
     plugins: [
       new ModuleFederationPlugin({
         name: 'master',

@@ -13,8 +13,8 @@ module.exports.defineConfig = () => ({
     index: '/index',
   },
   webpackConfig: {
-    // publicUrlOrPath: '/plugins/mf-plugin/', // 打包
-    publicUrlOrPath: 'auto', // 开发
+    publicUrlOrPath: '/plugins/mf-plugin/', // 打包
+    // publicUrlOrPath: 'auto', // 开发
     devServer: {
       port: 3201,
       host: 'localhost',
@@ -22,9 +22,9 @@ module.exports.defineConfig = () => ({
     optimization: {
       runtimeChunk: false,
     },
-    // output: {
-    //   publicPath: 'auto',
-    // },
+    output: {
+      publicPath: 'auto',
+    },
     plugins: [
       new ModuleFederationPlugin({
         name: 'extension_news',
