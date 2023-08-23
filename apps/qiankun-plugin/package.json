@@ -2,16 +2,8 @@
   "name": "qiankun-plugin",
   "version": "1.0.0",
   "description": "qiankun-plugin",
-  "private": true,
+  "homepage": "https://github.com/jason-gkq/szero-micro-framework#readme",
   "main": "./src/pages/index/index.tsx",
-  "scripts": {
-    "start": "szero-scripts start env=local",
-    "build": "szero-scripts build env=prod",
-    "build:test": "szero-scripts build env=test",
-    "build:pre": "szero-scripts build env=pre",
-    "build:prod": "szero-scripts build env=prod",
-    "rapper": "node ./script/rapper.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jason-gkq/szero-micro-framework.git"
@@ -21,6 +13,14 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jason-gkq/szero-micro-framework/issues"
+  },
+  "scripts": {
+    "start": "szero-scripts start env=local",
+    "build": "szero-scripts build env=prod",
+    "build:test": "szero-scripts build env=test",
+    "build:pre": "szero-scripts build env=pre",
+    "build:prod": "szero-scripts build env=prod",
+    "rapper": "node ./script/rapper.js"
   },
   "overrides": {
     "@ant-design/icons": "$@ant-design/icons",
@@ -41,7 +41,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.5",
     "@ant-design/pro-components": "2.4.16",
-    "@szero/pc": "^2.0.2",
+    "@szero/pc": "2.0.4",
     "@szero/plugin-remote": "1.0.1",
     "antd": "^5.8.3",
     "antd-img-crop": "4.12.0",
@@ -67,13 +67,5 @@
   },
   "devDependencies": {
     "szero-scripts": "1.1.0"
-  },
-  "homepage": "https://github.com/jason-gkq/szero-micro-framework#readme",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ]
+  }
 }

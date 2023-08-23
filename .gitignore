@@ -11,6 +11,11 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# cache
+.yarn/cache/
+.yarn/install-state.gz
+
 # Dependency directories
 node_modules/
 jspm_packages/
+

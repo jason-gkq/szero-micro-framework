@@ -1,9 +1,17 @@
 {
-  "name": "szero-plugin",
+  "name": "mf-plugin",
   "version": "1.0.0",
-  "private": true,
-  "devDependencies": {
-    "szero-scripts": "1.1.0"
+  "description": "mf-plugin",
+  "author": "guokeqin <guokeqin163@163.com>",
+  "homepage": "https://github.com/jason-gkq/szero-micro-framework/tree/main/apps/mf-plugin#readme",
+  "license": "ISC",
+  "main": "src/pages/index/index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-gkq/szero-micro-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jason-gkq/szero-micro-framework/issues"
   },
   "scripts": {
     "start": "szero-scripts start env=local",
@@ -12,12 +20,29 @@
     "build:pre": "szero-scripts build env=pre",
     "build:prod": "szero-scripts build env=prod"
   },
+  "overrides": {
+    "@ant-design/pro-components": "$@ant-design/pro-components",
+    "antd": "$antd",
+    "mobx": "$mobx",
+    "mobx-react-lite": "$mobx-react-lite",
+    "react": "$react"
+  },
+  "resolutions": {
+    "@ant-design/pro-components": "2.4.16",
+    "antd": "5.8.3",
+    "mobx": "6.10.0",
+    "mobx-react-lite": "4.0.3",
+    "react": "18.2.0"
+  },
   "dependencies": {
     "@ant-design/pro-components": "2.4.16",
-    "@szero/pc": "2.0.2",
+    "@szero/pc": "2.0.4",
     "antd": "^5.8.3",
     "mobx": "^6.10.0",
     "mobx-react-lite": "^4.0.3",
     "react": "18.2.0"
+  },
+  "devDependencies": {
+    "szero-scripts": "1.1.0"
   }
 }

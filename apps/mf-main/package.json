@@ -1,9 +1,9 @@
 {
   "name": "mf-main",
   "version": "2.0.0",
-  "description": "",
-  "private": true,
+  "description": "webpack mf 分包基站项目",
   "main": "./src/pages/index/index.tsx",
+  "homepage": "https://github.com/jason-gkq/szero-micro-framework#readme",
   "scripts": {
     "start": "szero-scripts start env=local",
     "build": "szero-scripts build env=prod",
@@ -41,7 +41,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.5",
     "@ant-design/pro-components": "2.4.16",
-    "@szero/pc": "^2.0.2",
+    "@szero/pc": "2.0.4",
     "@szero/plugin-remote": "1.0.1",
     "antd": "^5.8.3",
     "antd-img-crop": "4.12.0",
