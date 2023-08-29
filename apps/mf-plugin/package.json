@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@ant-design/pro-components": "2.4.16",
-    "@szero/pc": "2.0.4",
+    "@szero/pc": "2.0.6",
     "antd": "^5.8.3",
     "mobx": "^6.10.0",
     "mobx-react-lite": "^4.0.3",

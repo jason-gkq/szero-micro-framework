@@ -41,7 +41,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.5",
     "@ant-design/pro-components": "2.4.16",
-    "@szero/pc": "2.0.4",
+    "@szero/pc": "2.0.6",
     "@szero/plugin-remote": "1.0.1",
     "antd": "^5.8.3",
     "antd-img-crop": "4.12.0",
