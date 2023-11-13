@@ -16,6 +16,12 @@ module.exports.defineConfig = () => ({
     title: '管理中台',
     index: '/index/index',
   },
+  REQUEST: {
+    BASE: {
+      baseURL: 'http://rap2api.taobao.org/app/mock/302222/',
+      successCode: 200,
+    },
+  },
   webpackConfig: {
     publicUrlOrPath: '/admin/',
     devServer: {
@@ -84,7 +90,7 @@ module.exports.defineConfig = () => ({
       hideInMenu: false,
       icon: 'HomeOutlined',
       component: 'index/index',
-      redirect: '/index/index',
+      // redirect: '/index/index',
       children: [
         {
           path: 'index',
@@ -101,6 +107,7 @@ module.exports.defineConfig = () => ({
       hideInMenu: false,
       icon: 'HomeOutlined',
       isPlugin: true,
+      redirect: '/news/user',
       children: [
         {
           path: 'user',
@@ -121,7 +128,7 @@ module.exports.defineConfig = () => ({
       name: '系统',
       icon: 'SettingOutlined',
       hideInMenu: false,
-      redirect: '/system/user',
+      // redirect: '/system/user',
       children: [
         {
           path: 'user',

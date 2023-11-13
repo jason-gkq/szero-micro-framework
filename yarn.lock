@@ -3234,23 +3234,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@szero/hooks@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@szero/hooks@npm:2.0.1"
+"@szero/hooks@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@szero/hooks@npm:2.0.2"
   dependencies:
     "@szero/cache": ^2.0.0
   peerDependencies:
     react: ^17.0.0
-  checksum: fab7dd91454be5bdbb8d3de7cb91324021d76972d8ee5a751c7df5378ca45659fa4c3565b6f0830ef50d7bf2041499b0fcef873105e732caa7d66104a7f9bddc
+  checksum: 9f1c212796a99828005f26fd481165d07d28d45b506b18af6d6ce2271d4afa48cb8f853ec80680f426a01c7ea99a8f7dd77e3f7bdda2ba4737e8938cd1805e89
   languageName: node
   linkType: hard
 
-"@szero/navigate@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@szero/navigate@npm:2.0.1"
+"@szero/navigate@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@szero/navigate@npm:2.0.2"
   dependencies:
-    "@szero/hooks": ^2.0.1
-  checksum: ab02e70f44cc7a11ce62fac4527ace52f98248dc9823f63727c7bcc51c373ad17490f36fdffe4c46811d5232f3c047ed0c548e1e7d78b66697563153d06584f7
+    "@szero/hooks": ^2.0.2
+  checksum: 86538c3ea9d1f2e18ef75a580457adabc1b70d624e8d09e3a27c01f565ad9bfe1d673a41a601caa50a23afe35f6d79e2e69370adf651cd1c1d026ec49ef4d4a8
   languageName: node
   linkType: hard
 
@@ -3266,16 +3266,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@szero/pc@npm:2.0.6":
-  version: 2.0.6
-  resolution: "@szero/pc@npm:2.0.6"
+"@szero/pc@npm:2.0.8":
+  version: 2.0.8
+  resolution: "@szero/pc@npm:2.0.8"
   dependencies:
     "@ant-design/cssinjs": ~1.9.1
     "@ant-design/icons": ~5.0.1
     "@ant-design/pro-components": ~2.4.16
     "@szero/cache": ~2.0.0
-    "@szero/hooks": ^2.0.1
-    "@szero/navigate": ^2.0.1
+    "@szero/hooks": ^2.0.2
+    "@szero/navigate": ^2.0.2
     "@szero/net": ^2.0.1
     "@szero/utils": ^2.0.0
     "@types/node": ^20.1.4
@@ -3300,7 +3300,7 @@ __metadata:
     react: ^17.0.0
     react-dom: ^17.0.0
     react-router-dom: ^6.0.0
-  checksum: d978ca6fcbb3fb231cafb168d29b177b8b73369089d5984bc60fc08c7c890cd08e08d20fe1af7367793122457682d8fa0ee463a010fe464e8014b8a37f2d6f79
+  checksum: 45f29955355f85f4a5c98b9ce9accb2dc8080c8efa81132b416de394f7c68f6eed5cbb2a0571ac9403436b19b2d0d2950bfa91fcd99b5b2da6a8e3fca3f4342b
   languageName: node
   linkType: hard
 
@@ -8906,7 +8906,7 @@ __metadata:
   dependencies:
     "@ant-design/icons": ^5.2.5
     "@ant-design/pro-components": 2.4.16
-    "@szero/pc": 2.0.6
+    "@szero/pc": 2.0.8
     "@szero/plugin-remote": 1.0.1
     antd: ^5.8.3
     antd-img-crop: 4.12.0
@@ -8923,7 +8923,7 @@ __metadata:
   resolution: "mf-plugin@workspace:apps/mf-plugin"
   dependencies:
     "@ant-design/pro-components": 2.4.16
-    "@szero/pc": 2.0.6
+    "@szero/pc": 2.0.8
     antd: ^5.8.3
     mobx: ^6.10.0
     mobx-react-lite: ^4.0.3
@@ -11279,7 +11279,7 @@ __metadata:
   dependencies:
     "@ant-design/icons": ^5.2.5
     "@ant-design/pro-components": 2.4.16
-    "@szero/pc": 2.0.6
+    "@szero/pc": 2.0.8
     "@szero/plugin-remote": 1.0.1
     antd: ^5.8.3
     antd-img-crop: 4.12.0

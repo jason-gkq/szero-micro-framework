@@ -1,0 +1,53 @@
+{
+  "name": "mf-main",
+  "version": "1.0.0",
+  "description": "webpack mf 分包基站项目",
+  "main": "./src/pages/index/index.tsx",
+  "homepage": "https://github.com/jason-gkq/szero-micro-framework#readme",
+  "scripts": {
+    "start": "szero-scripts start env=local",
+    "build": "szero-scripts build env=prod",
+    "build:test": "szero-scripts build env=test",
+    "build:pre": "szero-scripts build env=pre",
+    "build:prod": "szero-scripts build env=prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-gkq/szero-micro-framework.git"
+  },
+  "keywords": [],
+  "author": "guokeqin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jason-gkq/szero-micro-framework/issues"
+  },
+  "browserslist": {
+    "production": [
+      "> 0.5%",
+      "last 2 versions",
+      "Firefox ESR",
+      "not dead",
+      "IE 11",
+      "not IE 10"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.5",
+    "@ant-design/pro-components": "2.4.16",
+    "@szero/pc": "2.0.8",
+    "@szero/plugin-remote": "1.0.1",
+    "antd": "^5.8.3",
+    "antd-img-crop": "4.12.0",
+    "mobx": "^6.10.0",
+    "mobx-react-lite": "^4.0.3",
+    "react": "18.2.0"
+  },
+  "devDependencies": {
+    "szero-scripts": "1.2.0"
+  }
+}

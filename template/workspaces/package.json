@@ -1,0 +1,37 @@
+{
+  "name": "workspaces-template",
+  "packageManager": "yarn@3.6.2",
+  "private": true,
+  "author": "guokeqin <guokeqin163@163.com>",
+  "homepage": "https://github.com/jason-gkq/szero-micro-framework",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-gkq/szero-micro-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jason-gkq/szero-micro-framework/issues"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "build": "lerna run --parallel build",
+    "build:test": "lerna run --parallel build:test",
+    "build:pre": "lerna run --parallel build:pre",
+    "build:prod": "lerna run --parallel build:prod",
+    "prepare": "husky install",
+    "prettier:check": "prettier --check ./apps",
+    "prettier:write": "prettier --write ./apps"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lerna": "^7.1.5",
+    "lint-staged": "^14.0.0",
+    "prettier": "^3.0.2"
+  },
+  "lint-staged": {
+    "pacappskages/**/*.{ts,tsx,less,json,css,md}": "prettier --write --ignore-unknown"
+  }
+}

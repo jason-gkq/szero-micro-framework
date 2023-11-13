@@ -10,12 +10,16 @@ import {
   setCacheEnvironment,
   getRouters,
 } from '@/zero';
-// import User from '@/src/pages/news/user';
-// import Roles from '@/src/pages/news/roles';
 import appStore from './app.store';
+import initHttpClient from './initHttpClient';
 
 let routes: any = [];
 export const onMount = (props: any) => {
+  const env = useEnv();
+  if (env.REQUEST) {
+    console.log('plugin is on mounted');
+    return 'plugin is on mounted';
+  }
   /**
    * 子项目store初始化
    */
@@ -26,7 +30,7 @@ export const onMount = (props: any) => {
   /**
    * 基站项目中环境变量注入子项目
    */
-  const env = useEnv();
+
   env.setEnv(props.env);
   /**
    * 基站项目中用户信息注入子项目
@@ -38,7 +42,7 @@ export const onMount = (props: any) => {
       }
     });
   }
-  const { appName, tokenName, cachePrefix, route: configRoute } = env;
+  const { appName, tokenName, cachePrefix, route: configRoute, REQUEST } = env;
   /**
    * 初始化路由信息，注入基站项目路由实例
    */
@@ -65,26 +69,18 @@ export const onMount = (props: any) => {
   /**
    * 根据配置菜单初始化子项目路由信息
    */
-  routes = getRouters(props.routes, false, 'news');
+  routes = getRouters(props.routes, false, 'system');
   // HttpClient 子项目请求初始化，每个子项目做一遍
+  initHttpClient(REQUEST);
+  console.log('plugin is on mount');
+
   return 'plugin is init success!';
 };
 
 export default function PluginApp() {
-  // console.log('plugin-init');
-
-  // HttpClient.get('system/user/list', { params: {} }).then((res: any) => {
-  //   console.log('>>>>?', res);
-  // });
-
   return (
     <Routes>
-      <Route path='/'>
-        {routes}
-        {/* {t && <Route index path='user' element={<User />} />} */}
-        {/* <Route index path='user' element={<User />} />
-        <Route path='roles' element={<Roles />} /> */}
-      </Route>
+      <Route path='/'>{routes}</Route>
     </Routes>
   );
 }

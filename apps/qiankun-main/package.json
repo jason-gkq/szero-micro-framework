@@ -2,8 +2,9 @@
   "name": "qiankun-main",
   "version": "1.0.0",
   "description": "",
+  "author": "guokeqin <guokeqin163@163.com>",
+  "homepage": "https://github.com/jason-gkq/szero-micro-framework/tree/main/apps/mf-plugin#readme",
   "main": "./src/index.js",
-  "author": "guokeqin",
   "license": "ISC",
   "keywords": [],
   "scripts": {
@@ -12,6 +13,13 @@
     "build:test": "szero-scripts build env=test",
     "build:pre": "szero-scripts build env=pre",
     "build:prod": "szero-scripts build env=prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-gkq/szero-micro-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jason-gkq/szero-micro-framework/issues"
   },
   "browserslist": {
     "production": [

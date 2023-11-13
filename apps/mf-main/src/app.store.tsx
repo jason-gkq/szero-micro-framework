@@ -81,6 +81,9 @@ export class AppStore {
   layout = {
     logo: Logo,
     title: '中台项目',
+    layout: 'mix',
+    contentWidth: 'Fluid',
+    splitMenus: true,
   };
   constructor() {
     /**
@@ -134,7 +137,7 @@ export class AppStore {
      */
     let originRoutes: IRouteMenuItem[] = sessionStorage.get('originRoutes');
     if (!originRoutes || originRoutes.length <= 0) {
-      const { data } = yield HttpClient.get('getRouters');
+      // const { data } = yield HttpClient.get('getRouters');
       const newData = [
         {
           path: env.appName,
