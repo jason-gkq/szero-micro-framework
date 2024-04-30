@@ -1,6 +1,5 @@
 {
   "name": "szero-micro-framework",
-  "packageManager": "yarn@3.6.2",
   "private": true,
   "author": "guokeqin <guokeqin163@163.com>",
   "homepage": "https://github.com/jason-gkq/szero-micro-framework",
